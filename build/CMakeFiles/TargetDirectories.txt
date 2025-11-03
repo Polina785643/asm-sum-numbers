@@ -1,0 +1,4 @@
+/home/polina/asm-sum-numbers/build/CMakeFiles/sum_numbers.dir
+/home/polina/asm-sum-numbers/build/CMakeFiles/clean_all.dir
+/home/polina/asm-sum-numbers/build/CMakeFiles/edit_cache.dir
+/home/polina/asm-sum-numbers/build/CMakeFiles/rebuild_cache.dir
