@@ -31,13 +31,6 @@ _start:
     mov rdx, prompt1_len     ; Длина выводимой строки
     syscall                  ; Вызов системного вызова - вывод приглашения
 
-    ; СБРОС БУФЕРА ВЫВОДА (вывод символа новой строки)
-    mov rax, 1               ; sys_write
-    mov rdi, 1               ; stdout
-    mov rsi, newline         ; Указатель на символ новой строки
-    mov rdx, 1               ; Длина: 1 символ
-    syscall                  ; Вызов системного вызова - вывод новой строки
-
     ; ЧТЕНИЕ ПЕРВОГО ЧИСЛА С КЛАВИАТУРЫ
     mov rax, 0               ; Номер системного вызова: 0 = sys_read (чтение)
     mov rdi, 0               ; Файловый дескриптор: 0 = stdin (стандартный ввод)
@@ -56,13 +49,6 @@ _start:
     mov rsi, prompt2         ; Приглашение для второго числа
     mov rdx, prompt2_len     ; Длина приглашения
     syscall                  ; Вывод приглашения
-
-    ; СБРОС БУФЕРА ВЫВОДА
-    mov rax, 1               ; sys_write
-    mov rdi, 1               ; stdout
-    mov rsi, newline         ; Символ новой строки
-    mov rdx, 1               ; Длина: 1 символ
-    syscall                  ; Вывод новой строки
 
     mov rax, 0               ; sys_read
     mov rdi, 0               ; stdin

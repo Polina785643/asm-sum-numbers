@@ -16,4 +16,5 @@ cmake ..
 make
 cd ..          # возврат в корневую директорию
 strace -o strace.log ./sum_numbers  # запуск программы с strace
+cd build
 make clean_all # удаляем бинарные файлы

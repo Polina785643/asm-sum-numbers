@@ -1,12 +1,10 @@
-execve("./sum_numbers", ["./sum_numbers"], 0x7ffd5a441210 /* 54 vars */) = 0
+execve("./sum_numbers", ["./sum_numbers"], 0x7ffc9ae1dc80 /* 54 vars */) = 0
 write(1, "Enter 1 number: \0", 17)      = 17
-write(1, "\n", 1)                       = 1
-read(0, "6\n", 16)                      = 2
+read(0, "5\n", 16)                      = 2
 write(1, "Enter 2 number: \0", 17)      = 17
-write(1, "\n", 1)                       = 1
-read(0, "9\n", 16)                      = 2
+read(0, "8\n", 16)                      = 2
 write(1, "Sum: \0", 6)                  = 6
-write(1, "15", 2)                       = 2
+write(1, "13", 2)                       = 2
 write(1, "\n", 1)                       = 1
 exit(0)                                 = ?
 +++ exited with 0 +++
