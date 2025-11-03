@@ -9,7 +9,6 @@ cat > README.md << 'EOF'
 
 ## Сборка и запуск
 
-### Способ 1: CMake
 ```bash
 mkdir build
 cd build
